@@ -1,0 +1,18 @@
+{
+    "name": "FitVR.Lobby",
+    "rootNamespace": "",
+    "references": [
+        "GUID:dbb6df8637360354a9c1c56666088c88",
+        "GUID:84fc61d2b1bdc334ba07407789c8d3b4",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

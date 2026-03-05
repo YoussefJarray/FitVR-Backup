@@ -1,0 +1,16 @@
+{
+    "name": "FitVR.MiniGames.Common",
+    "rootNamespace": "",
+    "references": [
+        "GUID:dbb6df8637360354a9c1c56666088c88"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

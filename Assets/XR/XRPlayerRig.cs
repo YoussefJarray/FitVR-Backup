@@ -1,0 +1,27 @@
+/* this will use the interface we creted in Core that prevents 
+mini games from accessing the rig directly 
+check, (Core/Interfaces))
+*/
+
+
+using UnityEngine;
+using Unity.XR.CoreUtils;
+using FitVR.Core;
+
+public class XRPlayerRig : MonoBehaviour, IXRPlayerRig
+{
+    [SerializeField] private Transform head;
+    [SerializeField] private Transform leftHand;
+    [SerializeField] private Transform rightHand;
+
+    public Transform Head => head;
+    public Transform LeftHand => leftHand;
+    public Transform RightHand => rightHand;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        ServiceLocator.Register<IXRPlayerRig>(this);
+    }
+}
+ 
