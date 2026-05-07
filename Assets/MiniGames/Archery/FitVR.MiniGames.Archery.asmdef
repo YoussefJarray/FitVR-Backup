@@ -4,7 +4,8 @@
     "references": [
         "FitVR.Core",
         "FitVR.Services",
-        "FitVR.MiniGames.Common"
+        "FitVR.MiniGames.Common",
+        "Unity.XR.Interaction.Toolkit"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
