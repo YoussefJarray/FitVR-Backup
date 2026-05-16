@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2315802549991679708}
   - component: {fileID: 8392206748026681125}
   - component: {fileID: 5904679004644885842}
+  - component: {fileID: -5041488669562613257}
   m_Layer: 8
   m_Name: Arrow Parent
   m_TagString: Arrow
@@ -74,6 +75,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: FitVR.MiniGames.Archery::ArrowRotation
   rb: {fileID: 8392206748026681125}
+--- !u!114 &-5041488669562613257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388544512307023182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c53a3294401be945814ea4e64d69832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FitVR.MiniGames.Archery::StickingArrowToSurface
+  rb: {fileID: 8392206748026681125}
+  myCollider: {fileID: 4648815013186592584}
+  stickingArrow: {fileID: 7152588600167591565, guid: 988bbafe1f85f0f4aa1a4571dfc9da63, type: 3}
 --- !u!1 &5842707854511733018
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +102,7 @@ GameObject:
   - component: {fileID: 5155546100203633362}
   m_Layer: 8
   m_Name: Trail
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,6 +296,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9c63e5ae862ebc843a239ebde7b0d563, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c63e5ae862ebc843a239ebde7b0d563, type: 3}
+      propertyPath: m_TagString
+      value: Arrow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

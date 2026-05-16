@@ -1,15 +1,15 @@
 ﻿<Solution>
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
-  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
   <Project Path="FitVR.MiniGames.Archery.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
   <Project Path="FitVR.Core.csproj" />
   <Project Path="FitVR.MiniGames.TableTennis.csproj" />
   <Project Path="FitVR.Lobby.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj" />
-  <Project Path="FitVR.XR.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="FitVR.XR.csproj" />
   <Project Path="FitVR.MiniGames.Common.csproj" />
   <Project Path="FitVR.MiniGames.Boxing.csproj" />
 </Solution>

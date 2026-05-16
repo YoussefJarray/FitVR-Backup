@@ -5,7 +5,9 @@
         "FitVR.Core",
         "FitVR.Services",
         "FitVR.MiniGames.Common",
-        "Unity.XR.Interaction.Toolkit"
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.TextMeshPro",
+        ""
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
