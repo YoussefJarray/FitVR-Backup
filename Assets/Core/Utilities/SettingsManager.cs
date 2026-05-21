@@ -24,10 +24,12 @@ public class SettingsManager : MonoBehaviour
     const float DEFAULT_SNAP_AMOUNT = 45f;
     const float DEFAULT_VOLUME      = 1f;
 
-    // ── Audio Mixer (assign in Inspector) ────────────────────────
+    // ── Audio Mixer (assign in Inspector, or auto-found) ─────────
     [Header("Audio Mixer")]
     [Tooltip("The project's main AudioMixer asset.")]
     [SerializeField] private AudioMixer audioMixer;
+
+    private const string MixerResourcesPath = "GameAudioMixer";
 
     [Tooltip("Exposed parameter name for master volume in the mixer.")]
     [SerializeField] private string masterParam = "VolMaster";
@@ -52,7 +54,14 @@ public class SettingsManager : MonoBehaviour
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        ResolveMixer();
         Load();
+    }
+
+    private void ResolveMixer()
+    {
+        if (audioMixer != null) return;
+        audioMixer = Resources.Load<AudioMixer>(MixerResourcesPath);
     }
 
     // ── Load / Save ──────────────────────────────────────────────

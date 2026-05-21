@@ -3785,6 +3785,7 @@ MonoBehaviour:
   sfxSlider: {fileID: 8371934180028269224}
   musicSlider: {fileID: 4405705092660183}
   pauseVolume: {fileID: 6967976822801739276}
+  volumeFadeDuration: 0.3
   objectsToPause:
   - {fileID: 0}
   - {fileID: 0}

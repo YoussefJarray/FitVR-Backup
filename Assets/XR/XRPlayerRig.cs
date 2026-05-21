@@ -24,7 +24,11 @@ public class XRPlayerRig : MonoBehaviour, IXRPlayerRig
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         ServiceLocator.Register<IXRPlayerRig>(this);
+    }
+
+    private void OnDestroy()
+    {
+        ServiceLocator.Unregister<IXRPlayerRig>();
     }
 }

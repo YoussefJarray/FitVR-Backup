@@ -1,22 +1,24 @@
 using UnityEngine;
 using FitVR.Core;
 
-public class BootstrapInstaller : MonoBehaviour
+public static class BootstrapInstaller
 {
-    private void Awake()
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    public static void Initialize()
     {
-        // Create core systems
         var stateMachine = new AppStateMachine();
         var sceneLoader = new SceneLoader();
         var gameFlow = new GameFlowManager(sceneLoader, stateMachine);
 
-        // Register services
         ServiceLocator.Register<IAppStateMachine>(stateMachine);
         ServiceLocator.Register<ISceneLoader>(sceneLoader);
         ServiceLocator.Register<IGameFlowManager>(gameFlow);
 
-        // Start application
-        gameFlow.LoadLobby();
+        if (SettingsManager.Instance == null)
+        {
+            var go = new GameObject("SettingsManager");
+            go.AddComponent<SettingsManager>();
+        }
     }
 }
 

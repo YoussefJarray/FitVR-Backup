@@ -19,6 +19,11 @@ namespace FitVR.Core
             _services[type] = service;
         }
 
+        public static bool IsRegistered<T>()
+        {
+            return _services.ContainsKey(typeof(T));
+        }
+
         public static T Get<T>()
         {
             var type = typeof(T);

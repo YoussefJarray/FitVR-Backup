@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.24056602, g: 0.6757316, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 948826c3653b8ad4aa7d4077919e65aa, type: 2}
+  m_SubtractiveShadowColor: {r: 0.34202564, g: 0.35736546, b: 0.3962264, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1654,25 +1654,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 8960808036970688750, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
   m_PrefabInstance: {fileID: 2130093785}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1035178238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3375677278784257356, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
-  m_PrefabInstance: {fileID: 2130093785}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1035178242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035178238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209c6835277097249b535e60f51f5b64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FitVR.Core::XRLocomotionSettingsApplier
-  continuousTurn: {fileID: 1615712797}
-  snapTurn: {fileID: 1615712796}
 --- !u!4 &1039441206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 59016547073655710, guid: 5d81520879974dc4eb696e2e81b82cda, type: 3}
@@ -2871,28 +2852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
---- !u!114 &1615712796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3018621507479740309, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
-  m_PrefabInstance: {fileID: 2130093785}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f365cf844c03449bc8973eead2c3c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.SnapTurnProvider
---- !u!114 &1615712797 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4995472929430789788, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
-  m_PrefabInstance: {fileID: 2130093785}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b29b6c6428c984a8a73ffc2d58063b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.ContinuousTurnProvider
 --- !u!1 &1659800930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,17 +3661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (VR)
       objectReference: {fileID: 0}
-    - target: {fileID: 5215665917174020527, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3375677278784257356, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1035178242}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a954270f94bd74640a0bc71460aa3b97, type: 3}
 --- !u!1001 &3666704463385905755
 PrefabInstance:
@@ -4181,7 +4133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715711473835735499, guid: e57fd850b87a0574181585b502916ea8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.062
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 8715711473835735499, guid: e57fd850b87a0574181585b502916ea8, type: 3}
       propertyPath: m_LocalPosition.z
