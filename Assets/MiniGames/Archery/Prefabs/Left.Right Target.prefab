@@ -107,20 +107,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: FitVR.MiniGames.Archery::MovingTarget
   movementMode: 0
-  lookAtPlayer: 1
-  playerTransform: {fileID: 0}
+  easingMode: 1
   moveX: 1
   moveY: 0
   moveZ: 0
   travelDistance: 2
   waypoints: []
   relativeToStart: 1
-  targetRadius: 0.5
-  maxScore: 100
-  minScore: 10
+  pingPongWaypoints: 0
   speed: 1
   arriveThreshold: 0
   health: 1
+  targetRadius: 0.5
+  maxScore: 100
+  minScore: 10
+  hitVFXPrefab: {fileID: 0}
+  vfxDelay: 2
+  vfxLifetime: 3
   audioSource: {fileID: 0}
 --- !u!82 &4624254184250700656
 AudioSource:
@@ -265,5 +268,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.40971214, y: 0.49911627, z: 0.05212678}
-  m_Center: {x: -0.00000008940697, y: 0.000000014901161, z: 0}
+  m_Size: {x: 0.40971214, y: 0.4155734, z: 0.05212678}
+  m_Center: {x: 0, y: -0.041771427, z: 0.00000047683716}
