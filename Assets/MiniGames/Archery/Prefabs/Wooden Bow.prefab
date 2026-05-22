@@ -648,7 +648,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8987751265856339638}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1130,6 +1130,11 @@ MonoBehaviour:
   midPointVisualObject: {fileID: 2610731294279083768}
   midPointParent: {fileID: 1173082404765929316}
   bowStringStretchLimit: 0.0022
+  maxHapticIntensity: 0.5
+  hapticDuration: 0.1
+  hapticTimer: 0
+  stringSoundThreshold: 0.001
+  audioSource: {fileID: 0}
   OnBowPulled:
     m_PersistentCalls:
       m_Calls:
@@ -1176,6 +1181,7 @@ MonoBehaviour:
   arrowPrefab: {fileID: 1388544512307023182, guid: abe76a8ef13981d4b8c315c429f8caf3, type: 3}
   arrowSpawnPoint: {fileID: 772041657946107201}
   arrowMaxSpeed: 10
+  bowReleaseAudioSource: {fileID: 0}
 --- !u!4 &8715711473835735499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d7ccfdbffa37bbc44ba5b15c0d462735, type: 3}

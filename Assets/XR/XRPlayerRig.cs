@@ -4,11 +4,13 @@ check, (Core/Interfaces))
 */
 
 using FitVR.Core;
-using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class XRPlayerRig : MonoBehaviour, IXRPlayerRig
 {
+    private static XRPlayerRig _instance;
+
     [SerializeField]
     private Transform head;
 
@@ -24,11 +26,37 @@ public class XRPlayerRig : MonoBehaviour, IXRPlayerRig
 
     private void Awake()
     {
+        if (_instance != null)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+
+        _instance = this;
+        DontDestroyOnLoad(gameObject);
         ServiceLocator.Register<IXRPlayerRig>(this);
+    }
+
+    private void Start()
+    {
+        var eventSystems = FindObjectsByType<EventSystem>(FindObjectsSortMode.None);
+        for (int i = 1; i < eventSystems.Length; i++)
+        {
+            DestroyImmediate(eventSystems[i].gameObject);
+        }
+        if (eventSystems.Length > 0)
+        {
+            eventSystems[0].transform.SetParent(null);
+            DontDestroyOnLoad(eventSystems[0].gameObject);
+        }
     }
 
     private void OnDestroy()
     {
-        ServiceLocator.Unregister<IXRPlayerRig>();
+        if (_instance == this)
+        {
+            _instance = null;
+            ServiceLocator.Unregister<IXRPlayerRig>();
+        }
     }
 }

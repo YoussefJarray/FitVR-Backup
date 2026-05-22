@@ -160,7 +160,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5752005340668987461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,9 +266,9 @@ MonoBehaviour:
   filledStarColor: {r: 1, g: 1, b: 1, a: 1}
   unfilledStarSprite: {fileID: 2800000, guid: c03f2f887d3b65d488550f8a90d43e40, type: 3}
   unfilledStarColor: {r: 0, g: 0, b: 0, a: 0.3529412}
-  oneStarThreshold: 400
-  twoStarThreshold: 800
-  threeStarThreshold: 1200
+  oneStarThreshold: 500
+  twoStarThreshold: 750
+  threeStarThreshold: 1000
   starRevealDelay: 0.5
   starStaggerDelay: 0.25
   starBouncePeak: 1.4
