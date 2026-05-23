@@ -9,10 +9,12 @@
 
 [![Unity](https://img.shields.io/badge/Unity-6000.3.8f1-black?style=flat-square&logo=unity&logoColor=white)](https://unity.com/)
 [![Platform](https://img.shields.io/badge/Platform-VR-blueviolet?style=flat-square&logo=oculus&logoColor=white)](https://github.com/)
-[![License](https://img.shields.io/github/license/SoliderBoy20xx/fitvr?style=flat-square&color=blue)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/SoliderBoy20xx/fitvr?style=flat-square&color=orange)](https://github.com/SoliderBoy20xx/fitvr/issues)
-[![Stars](https://img.shields.io/github/stars/SoliderBoy20xx/fitvr?style=flat-square&color=yellow)](https://github.com/SoliderBoy20xx/fitvr/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Issues](https://img.shields.io/badge/Issues-open-orange?style=flat-square)](https://github.com/SoliderBoy20xx/fitvr/issues)
+[![Stars](https://img.shields.io/badge/Stars-⭐-yellow?style=flat-square)](https://github.com/SoliderBoy20xx/fitvr/stargazers)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=flat-square)]()
+[![School Project](https://img.shields.io/badge/Type-School%20Project-9cf?style=flat-square)]()
+
 
 <!-- Replace with a banner/preview image of your app -->
 <img src="docs/images/fitvrbanner.png" alt="FitVR Banner" width="100%" style="border-radius: 12px; margin-top: 16px;" />
