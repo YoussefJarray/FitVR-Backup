@@ -15,7 +15,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
 <!-- Replace with a banner/preview image of your app -->
-<img src="docs/images/fitvr-banner.png" alt="FitVR Banner" width="100%" style="border-radius: 12px; margin-top: 16px;" />
+<img src="docs/images/fitvrbanner.png" alt="FitVR Banner" width="100%" style="border-radius: 12px; margin-top: 16px;" />
 
 [About](#about) · [Features](#features) · [Getting Started](#getting-started) · [Architecture](#architecture) · [Development Standards](#development-standards) · [Contributing](#contributing)
 
