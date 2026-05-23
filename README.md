@@ -27,6 +27,10 @@
 
 **FitVR** is a multiplayer virtual reality fitness platform built in Unity 6. It combines immersive mini-games with real workout routines, letting users exercise together in shared virtual environments — making fitness social, fun, and effective.
 
+> [!IMPORTANT]
+> FitVR is a school project. All assets used are property of their respective owners. You may not edit, modify, or distribute this code without prior authorization.
+
+
 ---
 
 ## Features
