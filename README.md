@@ -38,7 +38,7 @@
 ## Features
 
 - 🥊 **VR Mini-Games** — Engaging fitness activities designed around natural body movement
-- 🌐 **Multiplayer Lobby** — Join sessions with multiple simultaneous users in shared virtual spaces
+- 🌐 **Immersive Lobby** — Join Minigames using an interactive and cozy lobby.
 - 🔐 **Secure Authentication** — Encrypted user data and secure login flows
 - ⚡ **High-Performance** — Optimized for low latency and high frame rates essential for VR comfort
 - 🧩 **Modular Architecture** — Clean separation of Core, MiniGames, Lobby, and Services modules
